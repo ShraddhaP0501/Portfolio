@@ -63,3 +63,40 @@
 .skill-card:hover p {
     color: #0f172a;
 }
+
+/* ===================== */
+/* MOBILE RESPONSIVE FIX */
+/* ===================== */
+
+@media (max-width: 600px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    .skill-card {
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .skill-card svg {
+        font-size: 26px;
+    }
+
+    .skill-card p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 350px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
