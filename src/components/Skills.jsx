@@ -6,8 +6,9 @@ import {
     FaJs,
     FaDatabase,
     FaPython,
-    FaGithub, FaGitAlt, VscVscode
+    FaGithub, FaGitAlt
 } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
     return (

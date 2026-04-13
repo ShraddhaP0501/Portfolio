@@ -3,7 +3,6 @@
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
-    /* IMPORTANT FIX */
 }
 
 /* IMAGE */
@@ -11,26 +10,25 @@
     width: 280px;
     border-radius: 20px;
     object-fit: cover;
-    box-shadow: 0 0 30px rgba(0, 173, 181, 0.4);
+    box-shadow: 0 0 30px rgba(0, 173, 181, 0.25);
 }
 
 /* TEXT */
 .about-content {
     flex: 1;
     min-width: 250px;
-    /* IMPORTANT FIX */
 }
 
 .about-content h2 {
     font-size: 32px;
     margin-bottom: 20px;
-    color: #ffffff;
-    /* FORCE FIX */
+    color: #0f172a;
+    /* light mode default */
 }
 
 .about-content p {
-    color: #cbd5e1;
-    /* better contrast than #94a3b8 */
+    color: #2d486d;
+    /* light mode readable */
     margin-bottom: 15px;
     line-height: 1.6;
 }
@@ -49,5 +47,21 @@
 
     .about-content h2 {
         font-size: 26px;
+    }
+}
+
+/* 🌙 DARK MODE ONLY CSS */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #0f172a;
+        color: #cbd5e1;
+    }
+
+    .about-content h2 {
+        color: #ffffff;
+    }
+
+    .about-content p {
+        color: #94a3b8;
     }
 }
