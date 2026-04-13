@@ -1,10 +1,22 @@
 .footer {
+    width: 100%;
+    margin-top: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     text-align: center;
+
     padding: 25px 20px;
-    margin-top: 60px;
 
-    background: #0f172a;
-    color: #94a3b8;
+    background: var(--bg);
+    color: var(--text);
+    border-top: 1px solid var(--border);
+}
 
-    border-top: 1px solid #1e293b;
+.footer p {
+    margin: 0;
+    width: 100%;
+    text-align: center;
 }

@@ -1,7 +1,10 @@
+import "./Footer.css";
 const Footer = () => {
     return (
         <footer className="footer">
-            <p>© 2026 Shraddha Prajapati. All rights reserved.</p>
+            <p>
+                © 2026 <span>Shraddha Prajapati</span>. All rights reserved.
+            </p>
         </footer>
     );
 };

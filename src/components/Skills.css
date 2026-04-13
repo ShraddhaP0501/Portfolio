@@ -1,27 +1,45 @@
 /* =========================
-   SKILLS SECTION - MODERN UI
+   SKILLS SECTION
 ========================= */
 
 #skills {
-    padding: 80px 20px;
+    padding: 40px 20px;
     text-align: center;
-    background: #f8f9fb;
+    background: var(--bg);
+    /* SAME AS PROJECTS */
 }
 
 /* TITLE */
 #skills h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    font-weight: 700;
-    color: #111;
+    font-size: 30px;
+    margin-bottom: 25px;
+    color: var(--text-heading);
+}
+
+/* =========================
+   CATEGORY BOX
+========================= */
+
+.skill-category {
+    max-width: 700px;
+    margin: 0 auto 18px;
+    padding: 12px;
+
+    background: var(--card-bg);
+    /* SAME AS PROJECTS CARD */
+    border-radius: 14px;
+
+    border: 1px solid var(--border);
+
+    box-shadow: var(--shadow);
 }
 
 /* CATEGORY TITLE */
-#skills h3 {
-    font-size: 20px;
-    margin: 35px 0 20px;
-    color: #00adb5;
-    font-weight: 600;
+.skill-category h3 {
+    font-size: 18px;
+    margin: 10px 0 12px;
+    color: var(--accent);
+    /* SAME BLUE ACCENT */
 }
 
 /* =========================
@@ -30,87 +48,70 @@
 
 .skills-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 12px;
     justify-items: center;
-    margin-bottom: 30px;
 }
 
 /* =========================
-   SKILL CARD (GLASS STYLE)
+   SKILL CARD
 ========================= */
 
 .skill-card {
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
 
-    background: rgba(255, 255, 255, 0.7);
-    backdrop-filter: blur(10px);
-
-    border-radius: 18px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: var(--bg);
+    /* SAME BASE DARK */
+    border-radius: 12px;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    gap: 10px;
+    gap: 4px;
 
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
 
-    transition: all 0.35s ease;
+    box-shadow: var(--shadow);
+
+    transition: all 0.25s ease;
     cursor: pointer;
 }
 
 /* ICON */
 .skill-card svg {
-    font-size: 38px;
-    color: #00adb5;
-    transition: 0.3s;
+    font-size: 26px;
+    color: var(--accent);
 }
 
 /* TEXT */
 .skill-card p {
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
+    font-size: 12px;
     margin: 0;
+    font-weight: 500;
+    color: var(--text);
 }
 
 /* =========================
-   HOVER EFFECT (IMPORTANT)
+   HOVER EFFECT
 ========================= */
 
 .skill-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    background: #00adb5;
-    box-shadow: 0 15px 30px rgba(0, 173, 181, 0.35);
+    transform: translateY(-6px);
+    border-color: var(--accent);
+    box-shadow: 0 0 18px rgba(56, 189, 248, 0.25);
 }
 
 .skill-card:hover svg,
 .skill-card:hover p {
-    color: #fff;
+    color: var(--text-heading);
 }
 
 /* =========================
-   RESPONSIVE
+   MOBILE
 ========================= */
-
-@media (max-width: 768px) {
-    #skills h2 {
-        font-size: 28px;
-    }
-
-    .skill-card {
-        width: 120px;
-        height: 120px;
-    }
-
-    .skill-card svg {
-        font-size: 30px;
-    }
-}
 
 @media (max-width: 480px) {
     .skills-container {

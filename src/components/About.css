@@ -1,67 +1,92 @@
+/* =========================
+   ABOUT SECTION (CENTERED)
+========================= */
+
+#about {
+    background: var(--bg);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* MAIN CARD */
 .about-container {
+    max-width: 800px;
+    margin: auto;
+
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 50px;
-    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 25px;
+
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 16px;
+
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
 }
 
-/* IMAGE */
+/* =========================
+   IMAGE (CENTERED)
+========================= */
+
 .about-img img {
-    width: 280px;
-    border-radius: 20px;
+    width: 180px;
+    height: 180px;
     object-fit: cover;
-    box-shadow: 0 0 30px rgba(0, 173, 181, 0.25);
+
+    border-radius: 50%;
+    /* circular image */
+
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.25);
+    transition: 0.3s ease;
 }
 
-/* TEXT */
+/* hover effect */
+.about-img img:hover {
+    transform: scale(1.05);
+}
+
+/* =========================
+   TEXT (CENTERED)
+========================= */
+
 .about-content {
-    flex: 1;
-    min-width: 250px;
+    text-align: center;
 }
 
 .about-content h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #0f172a;
-    /* light mode default */
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: var(--text-heading);
 }
 
 .about-content p {
-    color: #2d486d;
-    /* light mode readable */
-    margin-bottom: 15px;
+    color: var(--text);
+    font-size: 15px;
     line-height: 1.6;
+    max-width: 600px;
+    margin: auto;
 }
 
-/* 📱 MOBILE */
+/* =========================
+   MOBILE
+========================= */
+
 @media (max-width: 768px) {
     .about-container {
-        flex-direction: column;
-        text-align: center;
-        gap: 25px;
+        padding: 20px;
     }
 
     .about-img img {
-        width: 200px;
+        width: 150px;
+        height: 150px;
     }
 
     .about-content h2 {
-        font-size: 26px;
-    }
-}
-
-/* 🌙 DARK MODE ONLY CSS */
-@media (prefers-color-scheme: dark) {
-    body {
-        background: #0f172a;
-        color: #cbd5e1;
-    }
-
-    .about-content h2 {
-        color: #ffffff;
-    }
-
-    .about-content p {
-        color: #94a3b8;
+        font-size: 24px;
     }
 }
