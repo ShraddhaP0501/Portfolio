@@ -6,9 +6,9 @@ import {
     FaJs,
     FaDatabase,
     FaPython,
-    FaGithub, FaGitAlt
+    FaGitAlt,
+    FaGithub
 } from "react-icons/fa";
-import { VscVscode } from "react-icons/vsc";
 
 const Skills = () => {
     return (
@@ -37,7 +37,6 @@ const Skills = () => {
                 <div className="skills-container">
                     <div className="skill-card"><FaGitAlt /><p>Git</p></div>
                     <div className="skill-card"><FaGithub /><p>GitHub</p></div>
-                    <div className="skill-card"><VscVscode /><p>VS Code</p></div>
                 </div>
 
                 {/* SOFT SKILLS */}
