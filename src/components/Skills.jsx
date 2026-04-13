@@ -29,6 +29,13 @@ const Skills = () => {
                     <div className="skill-card"><FaPython /><p>Python</p></div>
                     <div className="skill-card"><FaDatabase /><p>MySQL</p></div>
                 </div>
+                {/* TOOLS (NEW 🔥) */}
+                <h3>Tools</h3>
+                <div className="skills-container">
+                    <div className="skill-card"><FaGitAlt /><p>Git</p></div>
+                    <div className="skill-card"><FaGithub /><p>GitHub</p></div>
+                    <div className="skill-card"><VscVscode /><p>VS Code</p></div>
+                </div>
 
                 {/* SOFT SKILLS */}
                 <h3>Soft Skills</h3>

@@ -5,15 +5,13 @@ const About = () => {
     return (
         <section id="about">
             <div className="container about-container">
-
-                {/* IMAGE */}
-                <div className="about-img">
-                    <img src={profile} alt="profile" />
-                </div>
-
                 {/* TEXT */}
                 <div className="about-content">
                     <h2>About Me</h2>
+                    {/* IMAGE */}
+                    <div className="about-img">
+                        <img src={profile} alt="profile" />
+                    </div>
 
                     <p>
                         I am a passionate web developer with a strong interest in becoming a Full Stack Developer.

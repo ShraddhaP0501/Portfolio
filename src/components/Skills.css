@@ -5,7 +5,7 @@
 #skills h3 {
     margin-top: 30px;
     margin-bottom: 10px;
-    color: #00adb5;
+    color: #38bdf8;
 }
 
 /* GRID */
@@ -18,7 +18,8 @@
 
 /* CARD */
 .skill-card {
-    background: #f5f5f5;
+    background: #1e293b;
+    /* FIXED DARK MODE */
     padding: 20px;
     border-radius: 15px;
 
@@ -27,22 +28,38 @@
     align-items: center;
     gap: 10px;
 
-    transition: 0.3s;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ICON */
 .skill-card svg {
     font-size: 30px;
+    color: #38bdf8;
 }
 
 /* TEXT */
 .skill-card p {
     font-size: 14px;
+    color: #cbd5e1;
 }
 
 /* HOVER */
 .skill-card:hover {
-    transform: translateY(-8px);
-    background: #00adb5;
-    color: white;
+    transform: translateY(-10px);
+    background: #38bdf8;
+    color: #0f172a;
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
+}
+
+/* FIX ICON + TEXT ON HOVER */
+.skill-card:hover svg {
+    color: #0f172a;
+}
+
+.skill-card:hover p {
+    color: #0f172a;
 }

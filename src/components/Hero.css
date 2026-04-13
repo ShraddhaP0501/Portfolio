@@ -5,14 +5,14 @@
     overflow: hidden;
 }
 
-/* 🔥 Gradient background glow */
+/* 🔥 Gradient glow */
 .hero::before {
     content: "";
     position: absolute;
     width: 500px;
     height: 500px;
     background: radial-gradient(circle, #00adb5, transparent 70%);
-    top: -100px;
+    top: -120px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 0;
@@ -24,25 +24,24 @@
     font-size: 48px;
     z-index: 2;
     position: relative;
+    color: #ffffff;
 }
 
 .hero p {
-    font-size: 20px;
-    color: gray;
+    font-size: 18px;
+    color: #cbd5e1;
+    /* FIXED for dark mode */
     z-index: 2;
     position: relative;
 }
 
-/* FLOATING ICON STYLE */
+/* HERO IMAGE SECTION */
 .hero-img {
     position: relative;
     margin-top: 40px;
-}
-
-.hero-img img {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* MAIN IMAGE */
@@ -53,29 +52,62 @@
 }
 
 /* FLOATING LOGOS */
+.hero-img .react,
+.hero-img .vite {
+    position: absolute;
+}
+
+/* React icon */
 .hero-img .react {
     top: -30px;
     width: 50px;
+    left: 45%;
     animation: float 3s ease-in-out infinite;
 }
 
+/* Vite icon */
 .hero-img .vite {
-    top: 80px;
+    top: 90px;
     width: 40px;
+    left: 55%;
     animation: float 4s ease-in-out infinite;
 }
 
-/* FLOAT ANIMATION */
+/* FLOAT ANIMATION FIX */
 @keyframes float {
     0% {
-        transform: translate(-50%, 0px);
+        transform: translateY(0px);
     }
 
     50% {
-        transform: translate(-50%, -15px);
+        transform: translateY(-15px);
     }
 
     100% {
-        transform: translate(-50%, 0px);
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero-img .base {
+        width: 140px;
+    }
+
+    .hero-img .react {
+        width: 40px;
+        left: 40%;
+    }
+
+    .hero-img .vite {
+        width: 35px;
+        left: 60%;
     }
 }

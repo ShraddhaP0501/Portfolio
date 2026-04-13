@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Navbar.css";
+import resume from "../assets/resume.pdf";
+
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -20,8 +22,8 @@ const Navbar = () => {
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li>
-                    <a href="/resume.pdf" download className="btn">
-                        Resume
+                    <a href={resume} download="My_Resume.pdf">
+                        Download Resume
                     </a>
                 </li>
             </ul>

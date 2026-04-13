@@ -2,6 +2,8 @@
     display: flex;
     align-items: center;
     gap: 50px;
+    flex-wrap: wrap;
+    /* IMPORTANT FIX */
 }
 
 /* IMAGE */
@@ -9,22 +11,26 @@
     width: 280px;
     border-radius: 20px;
     object-fit: cover;
-
     box-shadow: 0 0 30px rgba(0, 173, 181, 0.4);
 }
 
 /* TEXT */
 .about-content {
     flex: 1;
+    min-width: 250px;
+    /* IMPORTANT FIX */
 }
 
 .about-content h2 {
     font-size: 32px;
     margin-bottom: 20px;
+    color: #ffffff;
+    /* FORCE FIX */
 }
 
 .about-content p {
-    color: #94a3b8;
+    color: #cbd5e1;
+    /* better contrast than #94a3b8 */
     margin-bottom: 15px;
     line-height: 1.6;
 }
@@ -34,9 +40,14 @@
     .about-container {
         flex-direction: column;
         text-align: center;
+        gap: 25px;
     }
 
     .about-img img {
         width: 200px;
+    }
+
+    .about-content h2 {
+        font-size: 26px;
     }
 }

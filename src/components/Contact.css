@@ -17,12 +17,15 @@
     align-items: center;
     gap: 10px;
 
-    background: #f5f5f5;
+    background: #1e293b;
+    /* DARK MODE SAFE */
     padding: 12px 18px;
     border-radius: 12px;
 
     text-decoration: none;
-    color: #333;
+    color: #e2e8f0;
+
+    border: 1px solid #334155;
 
     transition: 0.3s ease;
 }
@@ -30,12 +33,13 @@
 /* ICON */
 .contact-item svg {
     font-size: 22px;
+    color: #38bdf8;
 }
 
 /* TEXT */
 .contact-item span {
     font-size: 14px;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 /* HOVER */
@@ -44,20 +48,23 @@
     color: white;
 }
 
-/* BRAND COLORS */
+/* BRAND COLORS ON HOVER */
 .contact-item:nth-child(1):hover {
     background: #0a66c2;
     /* LinkedIn */
+    border-color: transparent;
 }
 
 .contact-item:nth-child(2):hover {
-    background: #333;
+    background: #111827;
     /* GitHub */
+    border-color: transparent;
 }
 
 .contact-item:nth-child(3):hover {
     background: #ea4335;
     /* Email */
+    border-color: transparent;
 }
 
 /* MOBILE */
