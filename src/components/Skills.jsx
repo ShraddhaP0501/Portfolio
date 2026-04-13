@@ -1,14 +1,13 @@
-import "./Skills.css";
 import {
     FaReact,
     FaHtml5,
     FaCss3Alt,
     FaJs,
-    FaDatabase,
-    FaPython,
+    FaGithub,
     FaGitAlt,
-    FaGithub
-} from "react-icons/fa";
+    FaPython,
+    FaDatabase
+} from "react-icons/fa6";
 
 const Skills = () => {
     return (
