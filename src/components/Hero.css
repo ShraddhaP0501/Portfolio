@@ -1,0 +1,81 @@
+.hero {
+    position: relative;
+    text-align: center;
+    padding: 120px 20px;
+    overflow: hidden;
+}
+
+/* 🔥 Gradient background glow */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, #00adb5, transparent 70%);
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    filter: blur(80px);
+}
+
+/* TEXT */
+.hero h1 {
+    font-size: 48px;
+    z-index: 2;
+    position: relative;
+}
+
+.hero p {
+    font-size: 20px;
+    color: gray;
+    z-index: 2;
+    position: relative;
+}
+
+/* FLOATING ICON STYLE */
+.hero-img {
+    position: relative;
+    margin-top: 40px;
+}
+
+.hero-img img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* MAIN IMAGE */
+.hero-img .base {
+    width: 180px;
+    position: relative;
+    z-index: 2;
+}
+
+/* FLOATING LOGOS */
+.hero-img .react {
+    top: -30px;
+    width: 50px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.hero-img .vite {
+    top: 80px;
+    width: 40px;
+    animation: float 4s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+    0% {
+        transform: translate(-50%, 0px);
+    }
+
+    50% {
+        transform: translate(-50%, -15px);
+    }
+
+    100% {
+        transform: translate(-50%, 0px);
+    }
+}

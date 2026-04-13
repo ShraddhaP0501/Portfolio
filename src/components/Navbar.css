@@ -1,0 +1,40 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    color: white;
+    z-index: 100;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00adb5;
+}
+
+.btn {
+    background: linear-gradient(45deg, #00adb5, #007bff);
+    padding: 8px 15px;
+    border-radius: 6px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
