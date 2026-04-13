@@ -8,6 +8,7 @@ import {
     FaPython,
     FaDatabase
 } from "react-icons/fa6";
+import "./Skills.css";
 
 const Skills = () => {
     return (

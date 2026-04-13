@@ -13,7 +13,7 @@ const Hero = () => {
                 Hi, I'm Shraddha 👋
             </motion.h1>
 
-            <p>Frontend Developer | Aspiring Full Stack Developer</p>
+            <p>Web Developer | Aspiring Full Stack Developer</p>
         </section>
     );
 };

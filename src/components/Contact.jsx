@@ -6,8 +6,7 @@ const Contact = () => {
     return (
         <section id="contact">
             <div className="container">
-                <h2>Contact Me</h2>
-                <p>Let's connect 👇</p>
+                <h2>Contact Me👇</h2>
 
                 <div className="contact-icons">
 
