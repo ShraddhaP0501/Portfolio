@@ -5,7 +5,8 @@ import {
     FaCss3Alt,
     FaJs,
     FaDatabase,
-    FaPython
+    FaPython,
+    FaGithub, FaGitAlt, VscVscode
 } from "react-icons/fa";
 
 const Skills = () => {
@@ -29,6 +30,7 @@ const Skills = () => {
                     <div className="skill-card"><FaPython /><p>Python</p></div>
                     <div className="skill-card"><FaDatabase /><p>MySQL</p></div>
                 </div>
+
                 {/* TOOLS (NEW 🔥) */}
                 <h3>Tools</h3>
                 <div className="skills-container">
