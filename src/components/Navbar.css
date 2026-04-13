@@ -1,40 +1,78 @@
 .navbar {
-    position: sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
-    backdrop-filter: blur(10px);
-    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 15px 40px;
-    color: white;
-    z-index: 100;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
 }
 
+/* LOGO */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+/* ✅ DESKTOP NAV (VISIBLE) */
 .nav-links {
     display: flex;
-    gap: 25px;
+    gap: 30px;
     list-style: none;
 }
 
+/* LINKS */
 .nav-links a {
     color: white;
     text-decoration: none;
-    transition: 0.3s;
 }
 
-.nav-links a:hover {
-    color: #00adb5;
-}
-
+/* BUTTON */
 .btn {
-    background: linear-gradient(45deg, #00adb5, #007bff);
     padding: 8px 15px;
-    border-radius: 6px;
+    background: linear-gradient(45deg, #00adb5, #3b82f6);
+    border-radius: 8px;
     color: white;
-    text-decoration: none;
-    transition: 0.3s;
 }
 
-.btn:hover {
-    transform: scale(1.05);
+/* ❌ HAMBURGER HIDDEN ON DESKTOP */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+
+        flex-direction: column;
+        width: 220px;
+        padding: 20px;
+
+        background: rgba(0, 0, 0, 0.9);
+
+        /* ONLY MOBILE HIDDEN */
+        transform: translateX(100%);
+        transition: 0.3s;
+    }
+
+    .nav-links.active {
+        transform: translateX(0);
+    }
 }

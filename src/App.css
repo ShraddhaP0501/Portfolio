@@ -1,14 +1,65 @@
-body {
+/* RESET */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
   font-family: Arial, sans-serif;
 }
 
+/* ROOT FIX (VERY IMPORTANT) */
+#root {
+  width: 100%;
+}
+
+/* GLOBAL SECTION */
+section {
+  width: 100%;
+  padding: 80px 20px;
+}
+
+/* CONTAINER (CENTER CONTENT NICELY) */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* DARK MODE */
 .dark {
   background: #0f172a;
   color: white;
+  min-height: 100vh;
 }
 
+/* LIGHT MODE */
 .light {
-  background: white;
-  color: black;
+  background: #ffffff;
+  color: #000;
+  min-height: 100vh;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3 {
+  margin-bottom: 15px;
+}
+
+/* PARAGRAPH */
+p {
+  line-height: 1.6;
+  color: gray;
+}
+
+/* BUTTON DEFAULT */
+button {
+  cursor: pointer;
+}
+
+/* LINKS */
+a {
+  text-decoration: none;
 }
